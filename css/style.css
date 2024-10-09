@@ -338,7 +338,7 @@ header {
 
 .navigation img {
  height: 50px;
- width: 50px;
+ width: auto;
  cursor: pointer;
 }
 
@@ -544,12 +544,6 @@ header {
  z-index: 3;
 }
 
-@@ -684,4 +622,16 @@ footer a {
-}
-
-
-}
-
 
 .banner {
  position: relative;
@@ -664,8 +658,8 @@ footer a {
 
 
 .footer-logo {
- width: 8rem;
- height: 8rem;
+ width: auto;
+ height: 4rem;
 }
 
 
