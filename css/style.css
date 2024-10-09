@@ -724,3 +724,18 @@ footer a {
   height: 400px; /* Sæt højden til 400px */
   object-fit: cover; /* Beskær billedet for at undgå forvrængning */
 }
+
+
+.kurv {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.kurv img {
+  height: 400px;
+  width: auto; 
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
