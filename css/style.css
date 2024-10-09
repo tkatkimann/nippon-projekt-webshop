@@ -146,6 +146,68 @@ main {
   margin:0px auto;
  }
 
+ .col-3 {
+  float: left;
+  width: 33.33%;
+  padding: 16px;
+ }
+ 
+ .col-2 {
+  float: left;
+  width: 50%;
+  padding: 16px;
+ }
+ 
+ .image-wrapper {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .image-wrapper::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(253, 134, 36, 0.18); /* Add your color filter here */
+   z-index: 1;
+ }
+ 
+ .image-wrapper img {
+   display: block;
+   width: 100%;
+   height: auto;
+   position: relative;
+   z-index: 0;
+ }
+ 
+ 
+ .dark {
+  width: 100%;
+  text-align: left;
+  padding: 80px 20%;
+  background-color: var(--secondary-1-color);
+ }
+ .dark p{
+  color: var(--primary-text-color);;
+ }
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+ 
+ 
+ .text-large{
+  font-size: 1.4rem;
+  font-weight: 600;
+ }
+ .text-small{
+  font-size: 1rem;
+ }
+
 
 /* =================================== ! responsive layout, så det tilpasser sig skærmstørrelse ! ======================================= */
 
@@ -635,16 +697,4 @@ footer a {
  }
 
 
-}
-
-
-.banner {
-  position: relative;
-  text-align: center;
-}
-
-.banner img {
-  width: 100%; /* Fyld hele bredden af skærmen */
-  height: 400px; /* Sæt højden til 400px */
-  object-fit: cover; /* Beskær billedet for at undgå forvrængning */
 }
