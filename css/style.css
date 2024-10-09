@@ -548,6 +548,7 @@ header {
 }
 
 .login-form {
+  color: #000000;
   background-color: #ffffff;
   padding: 40px;
   border-radius: 8px;
