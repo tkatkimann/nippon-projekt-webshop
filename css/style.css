@@ -538,6 +538,73 @@ header {
  z-index: 3;
 }
 
+/* Login */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7373;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e66d6d;
+}
+
+.forgot-links {
+  margin-top: 20px;
+}
+
+.forgot-links a {
+  color: #6a6a6a;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-links a:hover {
+  text-decoration: underline;
+}
+
 /* =================================== !sektion med footer ! ======================================= */
 
 
