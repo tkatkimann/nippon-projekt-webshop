@@ -118,6 +118,12 @@ body {
 }
 
 
+.white-background {
+  background-color: #ffffff; /* Hvid baggrund for kurv-siden */
+}
+
+
+
 main {
  margin:0px auto;
 }
@@ -545,15 +551,6 @@ button:hover {
 }
 
 /* Kurv */
-.kurv-section {
-  text-align: center; /* Centrerer billedsektionen */
-  padding: 20px; /* Tilføjer polstring rundt om billedet */
-}
-
-.kurv-class {
-  width: 50px; /* Eller brug en vilkårlig bredde, du ønsker */
-  height: auto; /* Sikrer, at billedets proportioner bevares */
-}
 
 
 
@@ -648,3 +645,22 @@ footer a {
   height: 400px; /* Sæt højden til 400px */
   object-fit: cover; /* Beskær billedet for at undgå forvrængning */
 }
+
+
+.kurv {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.kurv img{
+  height:400px;
+  width: auto; 
+}
+
+white-background{
+  background-color: white;
+}
+
