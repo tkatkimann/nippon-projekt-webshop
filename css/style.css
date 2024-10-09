@@ -309,13 +309,20 @@ header {
 }
 
 
+
 .navigation {
- background-color: var(--primary-1-color);
- padding: 0 20px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- position: sticky;
+  position: fixed; /* Fastgør navbaren til toppen */
+  top: 0; /* Positioner den i toppen */
+  left: 0; /* Juster venstre margen */
+  right: 0; /* Juster højre margen */
+  background-color: var(--primary-1-color); /* Baggrundsfarve */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Tilføj skygge bag navbaren */
+  z-index: 1000; 
+  min-height: 65px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
 }
 
 
@@ -323,6 +330,7 @@ header {
  display: block;
  text-align: center;
 }
+
 
 
 .navigation span:first-child {
@@ -415,9 +423,18 @@ header {
 
 
 .sidebar a {
- text-decoration: none;
- color: var(--primary-text-color);
+  text-decoration: none; 
+  color: var(--primary-text-color); 
+  padding: 10px; 
+  display: block; 
+  transition: background-color 0.3s; /* en glidende effekt */
 }
+
+.sidebar a:hover {
+  background-color: #A3BA7D; 
+  color: var(--primary-text-color); 
+}
+
 
 
 /* =================================== ! index.html med hero-sektion ! ======================================= */
