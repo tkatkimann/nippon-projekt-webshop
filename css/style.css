@@ -544,6 +544,19 @@ button:hover {
   text-decoration: underline;
 }
 
+/* Kurv */
+.kurv-section {
+  text-align: center; /* Centrerer billedsektionen */
+  padding: 20px; /* Tilføjer polstring rundt om billedet */
+}
+
+.kurv-class {
+  width: 50px; /* Eller brug en vilkårlig bredde, du ønsker */
+  height: auto; /* Sikrer, at billedets proportioner bevares */
+}
+
+
+
 /* =================================== !sektion med footer ! ======================================= */
 
 
