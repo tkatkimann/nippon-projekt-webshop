@@ -538,6 +538,24 @@ header {
  z-index: 3;
 }
 
+@@ -684,4 +622,16 @@ footer a {
+}
+
+
+}
+
+
+.banner {
+ position: relative;
+ text-align: center;
+}
+
+.banner img {
+ width: 100%; /* Fyld hele bredden af skærmen */
+ height: 400px; /* Sæt højden til 400px */
+ object-fit: cover; /* Beskær billedet for at undgå forvrængning */
+}
+
 /* Login */
 
 .login-container {
