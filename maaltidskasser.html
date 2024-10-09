@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="da-DK" dir="ltr">
+  <head>
+    <!-- globale metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="sitemap.xml" />
+    
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="/assets/icons/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- primære meta tags -->
+    <title>Nippon | Forside</title>
+    <meta name="title" content="Nippon | Forside" />
+    <meta name="description" content="Forside for Nippon" />
+    <meta
+      name="copyright"
+      content="Copyright nippon.dk Materialet må ikke gengives uden tilladelse."
+    />
+    <meta name="publisher" content="nippon.dk" />
+    <meta name="keywords" content="" />
+
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- robots -->
+    <meta name="robots" content="follow, noarchive, nosnippet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+    <!-- header med navigation og sidebar -->
+    <header>
+      <nav class="navigation">
+        <div>
+          <a href="index.html"
+            ><img src="/assets/icons/nippon-logo.webp" alt="Nippon Logo"
+          /></a>
+        </div>
+        <div>
+          <img
+            id="showSidebar"
+            src="/assets/icons/burger-menu.svg"
+            alt="Menu ikon"
+          />
+        </div>
+        <aside class="sidebar">
+          <ul>
+            <li>
+              <img
+                id="hideSidebar"
+                src="/assets/icons/menu-close.svg"
+                alt="Luk menu ikon"
+              />
+            </li>
+            <li><a href="maaltidskasser.html">MÅLTIDSKASSER</a></li>
+            <li><a href="om-os.html">OM OS</a></li>
+            <li><a href="kurv.html">KURV</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <main>
+      <section class="primary-image">
+
+        <div class="banner">
+          <picture>
+            <img
+              src="assets/images/vegetable-box-img.svg"
+              alt="Hero billed af en grøntsagskasse"
+            />
+            <h2>MÅLTIDSKASSER</h2>
+          </picture>
+        
+
+        </div>
+      </section>
+      <!-- Sushi Section -->
+    <section>
+      <h3>Sushi </h3>
+      <aside>
+          <label for="cart">Cart</label>
+          <input type="number" name="coffee" id="coffee" value="0" disabled>
+      </aside>
+      <aside>
+          <label for="coffee-price">Price per unit:</label>
+          <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+      </aside>
+      <aside>
+          <label for="coffee-total">Total price:</label>
+          <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+      </aside>
+
+      <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+      <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+      <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+      <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+      <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+  
+  </section>
+  <!-- Ramen Section -->
+  <section>
+      <h3>Ramen</h3>
+      <aside>
+          <label for="cart">Cart</label>
+          <input type="number" name="espresso" id="espresso" value="0" disabled>
+      </aside>
+      <aside>
+          <label for="espresso-price">Price per unit:</label>
+          <input type="number" name="espresso-price" id="espresso-price" value="18" disabled>
+      </aside>
+      <aside>
+          <label for="espresso-total">Total price:</label>
+          <input type="number" name="espresso-total" id="espresso-total" value="0" disabled>
+      </aside>
+
+      <aside><button onclick="addToCart('espresso');">Add to Cart</button></aside>
+      <aside><button onclick="removeFromCart('espresso');">Remove from Cart</button></aside>
+      <aside><button onclick="increaseQuantity('espresso', 2);">+2</button></aside>
+      <aside><button onclick="increaseQuantity('espresso', 3);">+3</button></aside>
+      <aside><button onclick="resetCart('espresso');">Reset Cart</button></aside>
+
+  </section>
+  <!-- Gyoza Section -->
+  <section>
+      <h3>Gyoza</h3>
+      <aside>
+          <label for="cart">Cart</label>
+          <input type="number" name="latte" id="latte" value="0" disabled>
+      </aside>
+      <aside>
+          <label for="latte-price">Price per unit:</label>
+          <input type="number" name="latte-price" id="latte-price" value="22" disabled>
+      </aside>
+      <aside>
+          <label for="latte-total">Total price:</label>
+          <input type="number" name="latte-total" id="latte-total" value="0" disabled>
+      </aside>
+
+      <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
+      <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
+      <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
+      <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
+      <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
+
+  </section>
+
+  <!-- Surprise Section -->
+  <section>
+    <h3>Surprise</h3>
+    <aside>
+        <label for="cart">Cart</label>
+        <input type="number" name="latte" id="latte" value="0" disabled>
+    </aside>
+    <aside>
+        <label for="latte-price">Price per unit:</label>
+        <input type="number" name="latte-price" id="latte-price" value="22" disabled>
+    </aside>
+    <aside>
+        <label for="latte-total">Total price:</label>
+        <input type="number" name="latte-total" id="latte-total" value="0" disabled>
+    </aside>
+
+    <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
+    <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
+    <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
+    <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
+    <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
+
+</section>
+
+  <section>
+      <h3>Checkout:</h3>
+      <aside>
+          <label for="totalSumCart">Total sum:</label>
+          <input type="number" name="totalSum" id="totalSum" disabled>
+      </aside>
+  </section>
+  
+  <aside><button onclick="goToCheckout();">Go to Checkout</button></aside>
+ 
+
+<!-- sektion med footer -->
+<footer>
+  <div class="footer-wrapper">
+    <div>
+      <section class="location">
+        <h3><br><br>Nippon ApS</h3>
+        <a
+          href="https://maps.google.com/maps?sca_esv=c4c2e7b7e13ba40b&rlz=1C1KNTJ_daDK990DK990&output=search&q=L%C3%B8ve%E2%80%99s+Bog-+og+Vincaf%C3%A9&source=lnms&entry=mc&ved=1t:200715&ictx=111"
+        >
+          Søren Frichs Vej 42
+          <br>8000 Aarhus C<br>
+        </a>
+      </section>
+      <section class="contact">
+        Telefon: <a href="tel:53569554">+45 53 56 95 54</a></section>
+        <span>E-mail:<a href="mailto:hello@nippon.dk">hello@nippon.dk</a></span>
+
+    </div>
+    <section class="footer-social">
+      <a href="/"
+        ><img
+          src="assets/icons/nippon-logo.webp"
+          alt="nippon logo"
+          class="footer-logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="" class="facebook"
+            ><img src="assets/icons/some/facebook-logo.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href=""
+            class="instagram"
+            ><img src="assets/icons/some/instagram-logo.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="copyright">
+    <small>&copy; Copyright 2024, Nippon.dk</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
