@@ -76,125 +76,185 @@
       </nav>
     </header>
     <main>
-      <section class="primary-image">
 
-        <div class="banner">
+      <section class="primary-image teaser">
           <picture>
             <img
               src="assets/images/vegetable-box-img.svg"
-              alt="Hero billed af en grøntsagskasse"
+              alt="Måltidskasser fra Nippon"
             />
-            <h2>MÅLTIDSKASSER</h2>
           </picture>
-        
-
-        </div>
+          <h1 class="title-to-teaser">Måltidskasser</h1>
       </section>
-      <!-- Sushi Section -->
-    <section>
-      <h3>Sushi </h3>
-      <aside>
-          <label for="cart">Cart</label>
-          <input type="number" name="coffee" id="coffee" value="0" disabled>
-      </aside>
-      <aside>
-          <label for="coffee-price">Price per unit:</label>
-          <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
-      </aside>
-      <aside>
-          <label for="coffee-total">Total price:</label>
-          <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
-      </aside>
+      
+ <!-- sektion med produktkatalog og herefter præsentation af måltidskasser -->
+ <section class="beer-catalog">
+  <h2>Måltidskasser fra Nippon</h2>
+  <ul class="food-list">
 
-      <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
-      <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
-      <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
-      <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
-      <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+    <li class="food-wrapper">
+      <div class="food-item">
+        <div class="food-image">
+          <img
+            src="assets/images/sushi-img.webp"
+            alt="sushi"
+          />
+        </div>
+        <div class="food-info-wrapper">
+          <div class="food-info">
+            <span class="food-title">sushi</span>
+            <span class="food-description">EVT. TEKST HER</span>
+              <aside>
+                  <label for="cart">Cart</label>
+                  <input type="number" name="coffee" id="coffee" value="0" disabled>
+              </aside>
+              <aside>
+                  <label for="coffee-price">Price per unit:</label>
+                  <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+              </aside>
+              <div>
+                  <label for="coffee-total">Total price:</label>
+                  <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+              </aside>
+         
+            </div>
+              <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+              <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+              <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+              <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+              <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+          </div>
+        </div>
+
+          <button class="btn">Bestil</button>
+        </div>
+      </div>
+
+      <li class="food-wrapper">
+        <div class="food-item">
+          <div class="food-image">
+            <img
+              src="assets/images/sushi-img.webp"
+              alt="sushi"
+            />
+          </div>
+          <div class="food-info-wrapper">
+            <div class="food-info">
+              <span class="food-title">sushi</span>
+              <span class="food-description">EVT. TEKST HER</span>
+                <aside>
+                    <label for="cart">Cart</label>
+                    <input type="number" name="coffee" id="coffee" value="0" disabled>
+                </aside>
+                <aside>
+                    <label for="coffee-price">Price per unit:</label>
+                    <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+                </aside>
+                <div>
+                    <label for="coffee-total">Total price:</label>
+                    <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+                </aside>
+           
+              </div>
+                <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+                <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+                <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+                <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+                <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+            </div>
+          </div>
   
-  </section>
-  <!-- Ramen Section -->
-  <section>
-      <h3>Ramen</h3>
-      <aside>
-          <label for="cart">Cart</label>
-          <input type="number" name="espresso" id="espresso" value="0" disabled>
-      </aside>
-      <aside>
-          <label for="espresso-price">Price per unit:</label>
-          <input type="number" name="espresso-price" id="espresso-price" value="18" disabled>
-      </aside>
-      <aside>
-          <label for="espresso-total">Total price:</label>
-          <input type="number" name="espresso-total" id="espresso-total" value="0" disabled>
-      </aside>
+            <button class="btn">Bestil</button>
+          </div>
+        </div>
 
-      <aside><button onclick="addToCart('espresso');">Add to Cart</button></aside>
-      <aside><button onclick="removeFromCart('espresso');">Remove from Cart</button></aside>
-      <aside><button onclick="increaseQuantity('espresso', 2);">+2</button></aside>
-      <aside><button onclick="increaseQuantity('espresso', 3);">+3</button></aside>
-      <aside><button onclick="resetCart('espresso');">Reset Cart</button></aside>
+        <li class="food-wrapper">
+          <div class="food-item">
+            <div class="food-image">
+              <img
+                src="assets/images/sushi-img.webp"
+                alt="sushi"
+              />
+            </div>
+            <div class="food-info-wrapper">
+              <div class="food-info">
+                <span class="food-title">sushi</span>
+                <span class="food-description">EVT. TEKST HER</span>
+                  <aside>
+                      <label for="cart">Cart</label>
+                      <input type="number" name="coffee" id="coffee" value="0" disabled>
+                  </aside>
+                  <aside>
+                      <label for="coffee-price">Price per unit:</label>
+                      <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+                  </aside>
+                  <div>
+                      <label for="coffee-total">Total price:</label>
+                      <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+                  </aside>
+             
+                </div>
+                  <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+                  <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+                  <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+                  <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+                  <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+              </div>
+            </div>
+    
+              <button class="btn">Bestil</button>
+            </div>
+          </div>
 
-  </section>
-  <!-- Gyoza Section -->
-  <section>
-      <h3>Gyoza</h3>
-      <aside>
-          <label for="cart">Cart</label>
-          <input type="number" name="latte" id="latte" value="0" disabled>
-      </aside>
-      <aside>
-          <label for="latte-price">Price per unit:</label>
-          <input type="number" name="latte-price" id="latte-price" value="22" disabled>
-      </aside>
-      <aside>
-          <label for="latte-total">Total price:</label>
-          <input type="number" name="latte-total" id="latte-total" value="0" disabled>
-      </aside>
-
-      <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
-      <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
-      <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
-      <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
-      <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
-
-  </section>
-
-  <!-- Surprise Section -->
-  <section>
-    <h3>Surprise</h3>
-    <aside>
-        <label for="cart">Cart</label>
-        <input type="number" name="latte" id="latte" value="0" disabled>
-    </aside>
-    <aside>
-        <label for="latte-price">Price per unit:</label>
-        <input type="number" name="latte-price" id="latte-price" value="22" disabled>
-    </aside>
-    <aside>
-        <label for="latte-total">Total price:</label>
-        <input type="number" name="latte-total" id="latte-total" value="0" disabled>
-    </aside>
-
-    <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
-    <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
-    <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
-    <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
-    <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
-
+          <li class="food-wrapper">
+            <div class="food-item">
+              <div class="food-image">
+                <img
+                  src="assets/images/sushi-img.webp"
+                  alt="sushi"
+                />
+              </div>
+              <div class="food-info-wrapper">
+                <div class="food-info">
+                  <span class="food-title">sushi</span>
+                  <span class="food-description">EVT. TEKST HER</span>
+                    <aside>
+                        <label for="cart">Cart</label>
+                        <input type="number" name="coffee" id="coffee" value="0" disabled>
+                    </aside>
+                    <aside>
+                        <label for="coffee-price">Price per unit:</label>
+                        <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+                    </aside>
+                    <div>
+                        <label for="coffee-total">Total price:</label>
+                        <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+                    </aside>
+               
+                  </div>
+                    <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+                    <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+                    <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+                    <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+                    <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+                </div>
+              </div>
+      
+                <button class="btn">Bestil</button>
+              </div>
+            </div>
+    </li>
+  </ul>
 </section>
 
-  <section>
-      <h3>Checkout:</h3>
-      <aside>
-          <label for="totalSumCart">Total sum:</label>
-          <input type="number" name="totalSum" id="totalSum" disabled>
-      </aside>
+<section id="content" class="teaser-content">
+  <h2>Indsæt box med totalsum her</h2>
+  <p>
+    En hvid box med felt til total sum + lyserød knap: gå til check ud
+  </p>
   </section>
-  
-  <aside><button onclick="goToCheckout();">Go to Checkout</button></aside>
  
-
+</main>
 <!-- sektion med footer -->
 <footer>
   <section>
