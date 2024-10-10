@@ -667,7 +667,6 @@ footer section{
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-1-color);
-  color: var(--primary-text-color);
 }
 
 footer section > div {
@@ -686,8 +685,6 @@ margin-bottom: 10px;
 
 .copyright {
  padding: 10px 0 15px 0;
- background-color: var(--primary-1-color);
- color: var(--primary-text-color);
  font-size: 0.8rem;
  text-align: center;
 }
