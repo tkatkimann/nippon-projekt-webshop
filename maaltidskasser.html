@@ -22,7 +22,7 @@
       content="Copyright nippon.dk Materialet må ikke gengives uden tilladelse."
     />
     <meta name="publisher" content="nippon.dk" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Nippon, Japanske måltidsmadkasser i Danmark, de bedste måltider, japansk køkken,  nemme måltidskasser, sundhed, sunde måltidskasser, billige måltidskasser, opskrifter for sushi, opskrifter for ramen, opskrifter for gyoza, vegetariske, veganske" />
 
     <!-- fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -103,14 +103,14 @@
         <div class="food-info-wrapper">
           <div class="food-info">
             <span class="food-title">Ramen</span>
-            <span class="food-description">Næste gang med kylling</span>
+            <span class="food-description">TILBEREDNINGSTID: 30 min</span>
               <aside>
-                  <label for="cart">Kurv</label>
+                  <label for="cart">Antal måltider</label>
                   <input type="number" name="ramen" id="ramen" value="0" disabled>
               </aside>
               <aside>
-                  <label for="ramen-price">Pris pr. ret:</label>
-                  <input type="number" name="ramen-price" id="ramen-price" value="65" disabled>
+                  <label for="ramen-price">Pris pr. måltid:</label>
+                  <input type="number" name="ramen-price" id="ramen-price" value="50" disabled>
               </aside>
               <div>
                   <label for="ramen-total">Pris total:</label>
@@ -140,15 +140,15 @@
           </div>
           <div class="food-info-wrapper">
             <div class="food-info">
-              <span class="food-title">sushi</span>
-              <span class="food-description">EVT. TEKST HER</span>
+              <span class="food-title">Sushi</span>
+              <span class="food-description">TILBEREDNINGSTID: 45 min</span>
                 <aside>
-                    <label for="cart">Kurv</label>
+                    <label for="cart">Antal måltider</label>
                     <input type="number" name="sushi" id="sushi" value="0" disabled>
                 </aside>
                 <aside>
-                    <label for="sushi-price">Pris pr. ret:</label>
-                    <input type="number" name="sushi-price" id="sushi-price" value="50" disabled>
+                    <label for="sushi-price">Pris pr. måltid:</label>
+                    <input type="number" name="sushi-price" id="sushi-price" value="65" disabled>
                 </aside>
                 <div>
                     <label for="sushi-total">Pris total:</label>
@@ -179,13 +179,13 @@
             <div class="food-info-wrapper">
               <div class="food-info">
                 <span class="food-title">Gyoza</span>
-                <span class="food-description">EVT. TEKST HER</span>
+                <span class="food-description">TILBEREDNIGSTID: 30 min</span>
                   <aside>
-                      <label for="cart">Kurv</label>
+                      <label for="cart">Antal måltider</label>
                       <input type="number" name="gyoza" id="gyoza" value="0" disabled>
                   </aside>
                   <aside>
-                      <label for="gyoza">Pris pr. ret:</label>
+                      <label for="gyoza">Pris pr. måltid:</label>
                       <input type="number" name="gyoza-price" id="gyoza-price" value="30" disabled>
                   </aside>
                   <div>
@@ -210,30 +210,30 @@
             <div class="food-item">
               <div class="food-image">
                 <img
-                  src="assets/images/sushi-img.webp"
+                  src="assets/images/surprise.webp"
                   alt="surprise"
                 />
               </div>
               <div class="food-info-wrapper">
                 <div class="food-info">
                   <span class="food-title">surprise</span>
-                  <span class="food-description">Ny overraskelse hver uge</span>
+                  <span class="food-description">TILBEREDNINGSTID: 40 min </span>
                     <aside>
-                        <label for="cart">Kurv</label>
+                        <label for="cart">Antal måltider</label>
                         <input type="number" name="surprise" id="surprise" value="0" disabled>
                     </aside>
                     <aside>
-                        <label for="surprise-price">Pris pr. ret:</label>
+                        <label for="surprise-price">Pris pr. måltid:</label>
                         <input type="number" name="surprise-price" id="surprice-price" value="45" disabled>
                     </aside>
                     <div>
-                        <label for="coffee-total">Pris total:</label>
+                        <label for="surprise-total">Pris total:</label>
                         <input type="number" name="surprise-total" id="surprise-total" value="0" disabled>
                     </aside>
                
                   </div>
-                    <aside><button onclick="addToCart('surprise');">Add to Cart</button></aside>
-                    <aside><button onclick="removeFromCart('surprise');">Remove from Cart</button></aside>
+                    <aside><button onclick="addToCart('surprise');">Føj til kurv</button></aside>
+                    <aside><button onclick="removeFromCart('surprise');">Fjern fra kurv</button></aside>
                     <aside><button onclick="increaseQuantity('surprise', 1);">+1</button></aside>
                     <aside><button onclick="increaseQuantity('surprise', 2);">+2</button></aside>
                     <aside><button onclick="resetCart('surprise');">Slet kurv</button></aside>
@@ -248,11 +248,21 @@
 </section>
 
 <section id="content" class="teaser-content">
-  <h2>Indsæt box med totalsum her</h2>
-  <p>
-    En hvid box med felt til total sum + lyserød knap: gå til check ud
-  </p>
-  </section>
+</div>
+<div class="food-info-wrapper">
+  <div class="food-info">
+    <span class="food-title">TOTAL SUM</span>
+      <div>
+          <input type="number" name="surprise" id="surprise" value="0" disabled>
+      </aside>
+    </div>
+        
+      </div>
+</div>
+
+  <button class="btn">Bestil</button>
+</div>
+</div>
  
 </main>
 <!-- sektion med footer -->
