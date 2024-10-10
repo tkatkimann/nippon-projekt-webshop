@@ -259,7 +259,9 @@ h3 {
 }
 
 
-
+.carousel img{
+  animation: slide 10s linear infinite; /* 10s er varigheden af animationen */
+}
 
 /* =================================== ! styling af knap ! ======================================= */
 
