@@ -667,6 +667,7 @@ footer section{
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-1-color);
+  color:#463519;
 }
 
 footer section > div {
@@ -678,7 +679,7 @@ margin-bottom: 10px;
 }
 
 .footer-logo {
-  width: 8rem;
+  width: auto;
   height: 8rem;
  }
 
