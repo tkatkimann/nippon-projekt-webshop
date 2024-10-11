@@ -259,10 +259,6 @@ h3 {
 }
 
 
-.carousel img{
-  animation: slide 10s linear infinite; /* 10s er varigheden af animationen */
-}
-
 /* =================================== ! styling af knap ! ======================================= */
 
 
@@ -498,18 +494,44 @@ header {
  width: 100px;
  float: right;
 }
-.carousel {  
-  margin-top: 100px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+
+.nemtbox h2{
+  font-size: 30px;
+  margin: 15px;
 }
 
-.carousel img {  
-  max-width: 300px;
-  margin:0 10px;
-
+/* Juster størrelse på billeder */
+.nemtbox img {
+  width: 75px;
+  margin-bottom: 20px; /* Tilføj lidt afstand under billederne */
 }
+.instagramtekst{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.instagramtekst h3{
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%; /* Adjust this according to your layout */
+  overflow: hidden; /* Ensure only one image shows at a time */
+}
+
+.carousel {
+  display: flex; /* Allows images to be placed side by side */
+  transition: transform 10s ease-in-out; /* Smooth transition when switching images */
+}
+
+.carousel img {
+  width: 100%; /* Ensure each image takes up full space of the carousel wrapper */
+}
+
+
+
 
 /* =================================== ! sektion med teasers ! ======================================= */
 
@@ -721,6 +743,7 @@ button:hover {
 footer section{
   display: flex;
   justify-content: space-around;
+  align-items: center; /* Align sections vertically centered */
   background-color: var(--secondary-1-color);
   color:#463519;
 }
@@ -737,6 +760,21 @@ margin-bottom: 10px;
   width: auto;
   height: 8rem;
  }
+
+
+ .social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  margin-right: 10px; /* Space between icons */
+}
+
+.social-media img {
+  width: 30px; /* Adjust size of the icons */
+  height: 30px;
+}
 
 
 .copyright {

@@ -36,3 +36,41 @@ window.addEventListener("scroll", function () {
   }
   lastScrollTop = scrollTop;
 });
+
+
+// Select elements
+const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
+
+let currentIndex = 0;
+const totalImages = images.length; // Total number of images (8)
+const imageWidth = 400; // Set the width of each image
+
+// Function to show an image at the given index
+function showImage(index) {
+    // Update the transform property to show the current image
+    carousel.style.transform = `translateX(-${index * imageWidth}px)`; 
+}
+
+// Function to go to the next image (circular)
+function nextImage() {
+    currentIndex++;
+    
+    // If we reach the last image, reset the index to the first image after a short delay
+    if (currentIndex >= totalImages) {
+        currentIndex = 0;
+        setTimeout(() => {
+            showImage(currentIndex); // Immediately show the first image
+        }, 500); // Delay to allow the last image to be seen
+    } else {
+        showImage(currentIndex);
+    }
+}
+
+// Auto-slide functionality (moving like a video)
+function startAutoSlide() {
+    setInterval(nextImage, 2000); // Change image every 2 seconds
+}
+
+// Start the auto-slide when the page loads
+window.addEventListener('load', startAutoSlide);
