@@ -523,7 +523,7 @@ header {
 
 .carousel {
   display: flex; /* Allows images to be placed side by side */
-  animation: linear infinite 10s /* Smooth transition when switching images */
+  animation: linear infinite 10s ease-in-out; /* Smooth transition when switching images */
 }
 
 .carousel img {
