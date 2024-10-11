@@ -523,13 +523,17 @@ header {
 
 .carousel {
   display: flex; /* Allows images to be placed side by side */
-  transition: transform 10s ease-in-out; /* Smooth transition when switching images */
+  animation: linear infinite 10s /* Smooth transition when switching images */
 }
 
 .carousel img {
   width: 100%; /* Ensure each image takes up full space of the carousel wrapper */
 }
 
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
 
 
 

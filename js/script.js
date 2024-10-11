@@ -59,9 +59,6 @@ function nextImage() {
     // If we reach the last image, reset the index to the first image after a short delay
     if (currentIndex >= totalImages) {
         currentIndex = 0;
-        setTimeout(() => {
-            showImage(currentIndex); // Immediately show the first image
-        }, 500); // Delay to allow the last image to be seen
     } else {
         showImage(currentIndex);
     }
