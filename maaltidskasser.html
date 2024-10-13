@@ -40,6 +40,7 @@
     <meta name="robots" content="follow, noarchive, nosnippet" />
     <!-- stylesheet -->
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/copy.js" defer></script>
   </head>
   <body>
 
@@ -87,127 +88,135 @@
           <h1 class="title-to-teaser">Måltidskasser</h1>
       </section>
       
- <!-- sektion med produktkatalog og herefter præsentation af måltidskasser -->
-  <section class="food-catalog">
-  <h2>Måltidskasser fra Nippon</h2>
+              <!-- sektion med produktkatalog og herefter præsentation af måltidskasser -->
+               
+              
 
-    <section class="foods">
-          <section class="boks">
-            <img src="assets/images/sushi-img.webp" alt="En måltidskasse af sushi" class="food-pic">
-            <article class="boks-content">
-                <h2>Sushi</h2>
-                <div class="price">
-                    <p>Pris pr. stk.</p>
-                    <p>50 kr.</p>
-                </div>
-                <!-- White container starts here -->
-                <div class="white-box">
-                    <section class="order-section">
-                        <h3>Vælg antal personer</h3>
-                        <div class="knapper">
-                            <button onclick="addToCart('sushi')">+ 1</button>
-                            <button onclick="removeFromCart('sushi')">- 1</button>
-                            <button onclick="resetCart('sushi')">Reset</button>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Antal retter tilføjet i alt</span>
-                            <input type="text" id="sushi" value="0" readonly>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Total pris</span>
-                            <input type="text" id="sushi-total" value="0 kr." readonly>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </section>
-        <section class="boks">
-            <img src="assets/images/ramen-with-chicken.webp" alt=" En måltidskasse af ramen med sprød kylling" class="food-pic">
-            <article class="boks-content">
-                <h2>Ramen</h2>
-                <div class="price">
-                    <p>Pris pr. stk.</p>
-                    <p>65 kr.</p>
-                </div>
-                <!-- White container starts here -->
-                <div class="white-box">
-                    <section class="order-section">
-                        <h3>Vælg antal personer</h3>
-                        <div class="knapper">
-                            <button onclick="addToCart('ramen')">+ 1</button>
-                            <button onclick="removeFromCart('ramen')">- 1</button>
-                            <button onclick="resetCart('ramen')">Reset</button>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Antal retter tilføjet i alt</span>
-                            <input type="text" id="ramen" value="0" readonly>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Total pris</span>
-                            <input type="text" id="ramen-total" value="0 kr." readonly>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </section>
-        <section class="boks">
-            <img src="assets/images/gyoza-img.webp" alt="En måltidskasse af gyoza" class="food-pic">
-            <article class="boks-content">
-                <h2>Gyoza</h2>
-                <div class="price">
-                    <p>Pris pr. stk.</p>
-                    <p>30 kr.</p>
-                </div>
-                <!-- White container starts here -->
-                <div class="white-box">
-                    <section class="order-section">
-                        <h3>Vælg antal personer</h3>
-                        <div class="knapper">
-                            <button onclick="addToCart('gyoza')">+ 1</button>
-                            <button onclick="removeFromCart('gyoza')">- 1</button>
-                            <button onclick="resetCart('gyoza')">Reset</button>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Antal retter tilføjet i alt</span>
-                            <input type="text" id="gyoza" value="0" readonly>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Total pris</span>
-                            <input type="text" id="gyoza-total" value="0 kr." readonly>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </section>
-        <section class="boks">
-            <img src="assets/images/surprise.webp" alt="En mystisk måltidskasse" class="food-pic">
-            <article class="boks-content">
-                <h2>Surprise</h2>
-                <div class="price">
-                    <p>Pris pr. stk.</p>
-                    <p>45 kr.</p>
-                </div>
-                <!-- White container starts here -->
-                <div class="white-box">
-                    <section class="order-section">
-                        <h3>Vælg antal personer</h3>
-                        <div class="knapper">
-                            <button onclick="addToCart('surprise')">+ 1</button>
-                            <button onclick="removeFromCart('surprise')">- 1</button>
-                            <button onclick="resetCart('surprise')">Reset</button>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Antal retter tilføjet i alt</span>
-                            <input type="text" id="surprise" value="0" readonly>
-                        </div>
-                        <div class="display">
-                            <span class="label-2">Total pris</span>
-                            <input type="text" id="surprise-total" value="0 kr." readonly>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </section>
+                <section class="food-catalog">
+                   <h2>Måltidskasser fra Nippon</h2>
+                   <section class="foods">
+                    <section class="boks">
+                      <img src="assets/images/sushi-img.webp" alt="En måltidskasse af sushi" class="food-pic">
+                      <article class="boks-content">
+                          <h2>Sushi</h2>
+                          <div class="price">
+                              <p>Pris pr. stk.</p>
+                              <p>50 kr.</p>
+                          </div>
+                          <!-- White container starts here -->
+                          <div class="white-box">
+                              <section class="order-section">
+                                  <h3>Vælg antal personer</h3>
+                                  <div class="knapper">
+                                      <button onclick="addToCart('sushi')">+ 1</button>
+                                      <button onclick="removeFromCart('sushi')">- 1</button>
+                                      <button onclick="resetCart('sushi')">Reset</button>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Antal retter tilføjet i alt</span>
+                                      <input type="text" id="sushi" value="0" readonly>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Total pris</span>
+                                      <input type="text" id="sushi-total" value="0 kr." readonly>
+                                  </div>
+                              </section>
+                          </div>
+                      </article>
+                  </section>
+                  <section class="boks">
+                      <img src="assets/images/ramen-with-chicken.webp" alt=" En måltidskasse af ramen med sprød kylling" class="food-pic">
+                      <article class="boks-content">
+                          <h2>Ramen</h2>
+                          <div class="price">
+                              <p>Pris pr. stk.</p>
+                              <p>65 kr.</p>
+                          </div>
+                          <!-- White container starts here -->
+                          <div class="white-box">
+                              <section class="order-section">
+                                  <h3>Vælg antal personer</h3>
+                                  <div class="knapper">
+                                      <button onclick="addToCart('ramen')">+ 1</button>
+                                      <button onclick="removeFromCart('ramen')">- 1</button>
+                                      <button onclick="resetCart('ramen')">Reset</button>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Antal retter tilføjet i alt</span>
+                                      <input type="text" id="ramen" value="0" readonly>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Total pris</span>
+                                      <input type="text" id="ramen-total" value="0 kr." readonly>
+                                  </div>
+                              </section>
+                          </div>
+                      </article>
+                  </section>
+                  <section class="boks">
+                      <img src="assets/images/gyoza-img.webp" alt="En måltidskasse af gyoza" class="food-pic">
+                      <article class="boks-content">
+                          <h2>Gyoza</h2>
+                          <div class="price">
+                              <p>Pris pr. stk.</p>
+                              <p>30 kr.</p>
+                          </div>
+                          <!-- White container starts here -->
+                          <div class="white-box">
+                              <section class="order-section">
+                                  <h3>Vælg antal personer</h3>
+                                  <div class="knapper">
+                                      <button onclick="addToCart('gyoza')">+ 1</button>
+                                      <button onclick="removeFromCart('gyoza')">- 1</button>
+                                      <button onclick="resetCart('gyoza')">Reset</button>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Antal retter tilføjet i alt</span>
+                                      <input type="text" id="gyoza" value="0" readonly>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Total pris</span>
+                                      <input type="text" id="gyoza-total" value="0 kr." readonly>
+                                  </div>
+                              </section>
+                          </div>
+                      </article>
+                  </section>
+                  <section class="boks">
+                      <img src="assets/images/surprise.webp" alt="En mystisk måltidskasse" class="food-pic">
+                      <article class="boks-content">
+                          <h2>Surprise</h2>
+                          <div class="price">
+                              <p>Pris pr. stk.</p>
+                              <p>45 kr.</p>
+                          </div>
+                          <!-- White container starts here -->
+                          <div class="white-box">
+                              <section class="order-section">
+                                  <h3>Vælg antal personer</h3>
+                                  <div class="knapper">
+                                      <button onclick="addToCart('surprise')">+ 1</button>
+                                      <button onclick="removeFromCart('surprise')">- 1</button>
+                                      <button onclick="resetCart('surprise')">Reset</button>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Antal retter tilføjet i alt</span>
+                                      <input type="text" id="surprise" value="0" readonly>
+                                  </div>
+                                  <div class="display">
+                                      <span class="label-2">Total pris</span>
+                                      <input type="text" id="surprise-total" value="0 kr." readonly>
+                                  </div>
+                              </section>
+                          </div>
+                      </article>
+                  </section>
+                </section>
+               
+
+
+
+    
 
           <section class="chk"> 
             <aside>
@@ -218,62 +227,43 @@
         </section>
         </section>
           
-
-
-
-
-<script src="js/copy.js"></script>
-  
-</main>
+  </main>
 
 
 <!-- sektion med footer -->
+
 <footer>
   <section>
     <div>
-         <a href="/"
-          ><img
-            src="assets/icons/nippon-logo.webp"
-            alt="nippon logo"
-            class="footer-logo"
-        /></a>   
+      <a href="/">
+        <img src="assets/icons/nippon-logo.webp" alt="nippon logo" class="footer-logo">
+      </a>
     </div>
-  
-        <div>
-             <h3>KONTAKTOPLYSNINGER</h3>
-            <p>Søren Frichs Vej 42 <br>
-            8000 Aarhus C <br>
-            Tlf.nr. : 86 12 43 90 <br>
-            mail: info@nippon.dk</p>
-        </div>
-  
-        <div>
-            <h3>Praktisk</h3>
-            <p>FAQ <br>
-            Information <br>
-        </div>
-        <div>
-  
-          <a
-          href="class="instagram"
-          class="instagram"
-          ><img src="assets/icons/some/instagram.webp" alt="Instagram"
-        /></a>
-              <a href="" class="facebook"
-                ><img src="assets/icons/some/facebook.webp" alt="Facebook"
-              /></a>
-              <a
-              href="" class="youtube"
-                class="youtube"
-                ><img src="assets/icons/some/youtube.webp" alt="Youtube"
-              /></a>
-  
-    </section>      
-       </div>
-        <div class="copyright">
-          <small>&copy; Copyright 2024, www.Nippon.dk</small>
-        </div>
+    <div>
+      <h3>KONTAKTOPLYSNINGER</h3>
+      <p>Søren Frichs Vej 42 <br> 8000 Aarhus C <br> Tlf.nr. : 86 12 43 90 <br> mail: info@nippon.dk</p>
+    </div>
+    <div>
+      <h3>Praktisk</h3>
+      <p>FAQ <br> Information <br></p>
+    </div>
+    <div>
+      <a href="" class="instagram">
+        <img src="assets/icons/some/instagram.webp" alt="Instagram logo">
+      </a>
+      <a href="" class="facebook">
+        <img src="assets/icons/some/facebook.webp" alt="Facebook logo">
+      </a>
+      <a href="" class="youtube">
+        <img src="assets/icons/some/youtube.webp" alt="Youtube logo">
+      </a>
+    </div>
+  </section>
+  <div class="copyright">
+    <small>&copy; Copyright 2024, www.Nippon.dk</small>
+  </div>
 </footer>
+
 <script src="js/products.js"></script>
 </body>
 </html>
