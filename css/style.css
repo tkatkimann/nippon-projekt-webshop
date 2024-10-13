@@ -604,61 +604,9 @@ img {
   gap: 30px;
 }
 
-.food-list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px 20px;
-}
-.food-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.food-item {
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.food-image {
-  padding: 0 20px;
-}
-.food-image img {
-  box-shadow: var(--item-shadow);
-}
-.food-info-wrapper {
-  position: relative;
-  background-color: var(--secondary-1-color);
-  box-shadow: var(--item-shadow);
-  padding: 60px 30px 30px 30px;
-  margin-top: -20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  z-index: -1;
-}
-.food-info-wrapper .btn {
-  font-size: 1rem;
-}
-.food-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.food-info span:first-child {
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 20px;
- 
-}
-.food-info span:last-child {
 
-  text-align: center;
-}
+
+
 
 /* Login */
 
@@ -849,19 +797,22 @@ margin-bottom: 10px;
   grid-template-columns: repeat(2, 1fr); /* Opretter to lige store kolonner */
   gap: 50px; /* Mellemrum mellem boksene */
 
+  
+
 }
 
-@media (max-width: 800px) {
-  .foods {
-    grid-template-columns: 1fr; 
-  }
-}
+
 
 .boks {
   background-color: #F3A2B1;
   width: 300px;
   text-align: center;
   overflow: hidden;
+}
+
+
+.boks-content {
+  padding: 20px;
 }
 
 .food-pic {
@@ -872,9 +823,7 @@ margin-bottom: 10px;
   border-radius: 0;
 }
 
-.boks-content {
-  padding: 20px;
-}
+
 
 h2 {
   font-size: 24px;
