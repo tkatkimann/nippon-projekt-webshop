@@ -72,6 +72,9 @@ function checkoutTotalPrice() {
 
     // Opdater total sum feltet med den nye total sum
     document.getElementById('totalSum').value = totalSum + ' kr.';
+
+        // Save total sum to localStorage
+        localStorage.setItem('totalPrice', totalSum);
 }
 
 // Funktion til at opdatere den totale pris for et produkt
@@ -99,10 +102,13 @@ function updateTotalPrice(product) {
 
 // Når siden indlæses, henter vi data fra localStorage
 window.onload = function() {
-    loadOrderFromLocalStorage();
+    const totalPrice = localStorage.getItem('totalPrice') || '0';
+    document.getElementById('totalPrice').textContent = totalPrice + ' kr.';
 };
 
 // Tilføjes i bunden af den eksisterende script.js fil
 function goToCheckout() {
     window.location.href = 'checkout.html';
 }
+
+
