@@ -987,38 +987,38 @@ h2 {
 
 /* checkout styling*/
 .image-container {
-  position: relative; /* Set the container as a relative positioning context */
-  display: inline-block; /* Allows the image and overlay to be sized according to the image */
+  position: relative; 
+  display: inline-block; 
 }
 
 .image-container img {
-  display: block; /* Ensure the image is displayed properly */
-  width: 100%; /* Make the image responsive */
+  display: block;
+  width: 100%; 
 }
 
 .overlay-content {
-  position: absolute; /* Position the content on top of the image */
-  top: 0; /* Align to the top of the container */
-  left: 100; /* Align to the left of the container */
-  right: 0; /* Stretch to the right */
-  bottom: 0; /* Stretch to the bottom */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  text-align: center; /* Center items horizontally */
-  color: black; /* Text color */
-  padding: 20px; /* Padding for the overlay content */
+  position: absolute; 
+  top: 0; 
+  left: 100px; 
+  right: 0; 
+  bottom: 0; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; 
+  color: black;
+  padding: 20px; 
 }
 
 .button-container {
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    margin-top: 20px; /* Optional spacing above the container */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
 #checkoutBtn {
-  margin-top: 20px; /* Space between the price and the button */
+  margin-top: 20px; 
   color: white;
   background-color: #5BC0DE;
 }
