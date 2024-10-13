@@ -708,20 +708,7 @@ input[type="email"], input[type="password"] {
   border-radius: 4px;
 }
 
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #ff7373;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: #e66d6d;
-}
 
 .forgot-links {
   margin-top: 20px;
@@ -850,4 +837,199 @@ margin-bottom: 10px;
   width: auto; 
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+}
+
+
+/*Måltidskasser starter nedenunder*/
+
+
+
+.foods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Opretter to lige store kolonner */
+  gap: 50px; /* Mellemrum mellem boksene */
+
+}
+
+@media (max-width: 800px) {
+  .foods {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.boks {
+  background-color: #F3A2B1;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.food-pic {
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+  border-radius: 0;
+}
+
+.boks-content {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #463519;
+  margin: 10px 0;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.price p {
+  color: #463519;
+}
+
+.display span {
+  color: #463519;
+}
+
+.white-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.order-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4a2c2a;
+}
+
+.knapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.knapper button {
+  background-color: #F3A2B1;
+  color: #4a2c2a;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.knapper button:last-child {
+  margin-right: 0;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Fylder hele bredden */
+}
+
+.label-2 {
+  font-size: 14px;
+  background-color: #C2D5A3 ;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  height: 40px; /* Ensartet højde */
+  margin: 0; /* Ingen margin */
+  white-space: nowrap; /* Forhindrer tekstbrud */
+}
+
+.display input {
+  width: calc(50% - 5px); 
+  background-color: #e6e6e6;
+  border: none;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  height: 40px; 
+  align-items: center;
+  justify-content: center; 
+}
+
+
+/*Check out styling*/ 
+
+.chk {
+  background-color:  white; 
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+
+.chk aside {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 100%; 
+}
+
+.chk label {
+  font-size: 14px;
+  background-color: #C2D5A3;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  height: 40px; 
+  margin: 0; 
+  white-space: nowrap; 
+}
+
+.chk input {
+
+  width: calc(50% - 5px); /* Giver lidt plads mellem input og label */
+  background-color: #e6e6e6;
+  border: none;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+}
+
+
+.chk button {
+  display: inline-block;
+  background-color: #F3A2B1;
+  color: #4a2c2a;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px; 
+  width: 100%; 
+}
+
+.chk button:hover {
+  background-color: #ed8094; 
+  color: white;
 }

@@ -90,181 +90,157 @@
  <!-- sektion med produktkatalog og herefter præsentation af måltidskasser -->
  <section class="food-catalog">
   <h2>Måltidskasser fra Nippon</h2>
-  <ul class="food-list">
 
-    <li class="food-wrapper">
-      <div class="food-item">
-        <div class="food-image">
-          <img
-            src="assets/images/ramen-with-chicken.webp"
-            alt="ramen"
-          />
-        </div>
-        <div class="food-info-wrapper">
-          <div class="food-info">
-            <span class="food-title">Ramen</span>
-            <span class="food-description">TILBEREDNINGSTID: 30 min</span>
-              <aside>
-                  <label for="cart">Antal måltider</label>
-                  <input type="number" name="ramen" id="ramen" value="0" disabled>
-              </aside>
-              <aside>
-                  <label for="ramen-price">Pris pr. måltid:</label>
-                  <input type="number" name="ramen-price" id="ramen-price" value="50" disabled>
-              </aside>
-              <div>
-                  <label for="ramen-total">Pris total:</label>
-                  <input type="number" name="ramen-total" id="ramen-total" value="0" disabled>
-              </aside>
-         
-            </div>
-              <aside><button onclick="addToCart('ramen');">Føj til kurv</button></aside>
-              <aside><button onclick="removeFromCart('ramen');">Fjern fra kurv</button></aside>
-              <aside><button onclick="increaseQuantity('ramen', 1);">+1</button></aside>
-              <aside><button onclick="increaseQuantity('ramen', 2);">+2</button></aside>
-              <aside><button onclick="resetCart('ramen');">Slet kurv</button></aside>
-          </div>
-        </div>
 
-          <button class="btn">Bestil</button>
-        </div>
-      </div>
 
-      <li class="food-wrapper">
-        <div class="food-item">
-          <div class="food-image">
-            <img
-              src="assets/images/sushi-img.webp"
-              alt="sushi"
-            />
-          </div>
-          <div class="food-info-wrapper">
-            <div class="food-info">
-              <span class="food-title">Sushi</span>
-              <span class="food-description">TILBEREDNINGSTID: 45 min</span>
-                <aside>
-                    <label for="cart">Antal måltider</label>
-                    <input type="number" name="sushi" id="sushi" value="0" disabled>
-                </aside>
-                <aside>
-                    <label for="sushi-price">Pris pr. måltid:</label>
-                    <input type="number" name="sushi-price" id="sushi-price" value="65" disabled>
-                </aside>
-                <div>
-                    <label for="sushi-total">Pris total:</label>
-                    <input type="number" name="sushi-total" id="sushi-total" value="0" disabled>
-                </aside>
-           
-              </div>
-                <aside><button onclick="addToCart('sushi');">Føj til kurv</button></aside>
-                <aside><button onclick="removeFromCart('sushi');">Fjern fra kurv</button></aside>
-                <aside><button onclick="increaseQuantity('sushi', 1);">+1</button></aside>
-                <aside><button onclick="increaseQuantity('sushi', 2);">+2</button></aside>
-                <aside><button onclick="resetCart('sushi');">Slet kurv</button></aside>
-            </div>
-          </div>
-  
-            <button class="btn">Bestil</button>
-          </div>
-        </div>
 
-        <li class="food-wrapper">
-          <div class="food-item">
-            <div class="food-image">
-              <img
-                src="assets/images/gyoza-img.webp"
-                alt="gyoza"
-              />
-            </div>
-            <div class="food-info-wrapper">
-              <div class="food-info">
-                <span class="food-title">Gyoza</span>
-                <span class="food-description">TILBEREDNIGSTID: 30 min</span>
-                  <aside>
-                      <label for="cart">Antal måltider</label>
-                      <input type="number" name="gyoza" id="gyoza" value="0" disabled>
-                  </aside>
-                  <aside>
-                      <label for="gyoza">Pris pr. måltid:</label>
-                      <input type="number" name="gyoza-price" id="gyoza-price" value="30" disabled>
-                  </aside>
-                  <div>
-                      <label for="gyoza">Pris total:</label>
-                      <input type="number" name="gyoza-total" id="gyoza-total" value="0" disabled>
-                  </aside>
-             
-                </div>
-                  <aside><button onclick="addToCart('gyoza');">Føj til kurv</button></aside>
-                  <aside><button onclick="removeFromCart('gyoza');">Fjern fra kurv</button></aside>
-                  <aside><button onclick="increaseQuantity('gyoza', 1);">+1</button></aside>
-                  <aside><button onclick="increaseQuantity('gyoza', 2);">+2</button></aside>
-                  <aside><button onclick="resetCart('gyoza');">Slet kurv</button></aside>
-              </div>
-            </div>
+  <section class="foods">
     
-              <button class="btn">Bestil</button>
-            </div>
-          </div>
-
-          <li class="food-wrapper">
-            <div class="food-item">
-              <div class="food-image">
-                <img
-                  src="assets/images/surprise.webp"
-                  alt="surprise"
-                />
-              </div>
-              <div class="food-info-wrapper">
-                <div class="food-info">
-                  <span class="food-title">surprise</span>
-                  <span class="food-description">TILBEREDNINGSTID: 40 min </span>
-                    <aside>
-                        <label for="cart">Antal måltider</label>
-                        <input type="number" name="surprise" id="surprise" value="0" disabled>
-                    </aside>
-                    <aside>
-                        <label for="surprise-price">Pris pr. måltid:</label>
-                        <input type="number" name="surprise-price" id="surprice-price" value="45" disabled>
-                    </aside>
-                    <div>
-                        <label for="surprise-total">Pris total:</label>
-                        <input type="number" name="surprise-total" id="surprise-total" value="0" disabled>
-                    </aside>
-               
-                  </div>
-                    <aside><button onclick="addToCart('surprise');">Føj til kurv</button></aside>
-                    <aside><button onclick="removeFromCart('surprise');">Fjern fra kurv</button></aside>
-                    <aside><button onclick="increaseQuantity('surprise', 1);">+1</button></aside>
-                    <aside><button onclick="increaseQuantity('surprise', 2);">+2</button></aside>
-                    <aside><button onclick="resetCart('surprise');">Slet kurv</button></aside>
+       <!-- Sushi section -->
+        <section class="boks">
+            <img src="assets/images/sushi-img.webp" alt="Sushi" class="food-pic">
+            <article class="boks-content">
+                <h2>Sushi</h2>
+                <div class="price">
+                    <p>Pris pr. stk.</p>
+                    <p>50 kr.</p>
                 </div>
+                <!-- White container starts here -->
+                <div class="white-box">
+                    <section class="order-section">
+                        <h3>Vælg antal personer</h3>
+                        <div class="knapper">
+                            <button id="add">+ 1</button>
+                            <button id="subtract">- 1</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                        <div class="display">
+                            <span class="label-2">Antal retter tilføjet i alt</span>
+                            <input type="text" id="totalItems" readonly value="0">
+                        </div>
+                        <div class="display">
+                            <span class="label-2">Total pris</span>
+                            <input type="text" id="totalPrice" readonly value="0 kr.">
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </section>
+
+
+      <!-- Ramen  Section -->
+        <section class="boks">
+          <img src="assets/images/ramen-with-chicken.webp" alt="Ramen" class="food-pic">
+          <article class="boks-content">
+              <h2>Ramen</h2>
+              <div class="price">
+                  <p>Pris pr. stk.</p>
+                  <p>65 kr.</p>
               </div>
-      
-                <button class="btn">Bestil</button>
+              <!-- White container starts here -->
+              <div class="white-box">
+                  <section class="order-section">
+                      <h3>Vælg antal personer</h3>
+                      <div class="knapper">
+                          <button id="add">+ 1</button>
+                          <button id="subtract">- 1</button>
+                          <button id="reset">Reset</button>
+                      </div>
+                      <div class="display">
+                          <span class="label-2">Antal retter tilføjet i alt</span>
+                          <input type="text" id="totalItems" readonly value="0">
+                      </div>
+                      <div class="display">
+                          <span class="label-2">Total pris</span>
+                          <input type="text" id="totalPrice" readonly value="0 kr.">
+                      </div>
+                  </section>
               </div>
+          </article>
+      </section>
+
+
+      <!-- Gyoza  Section -->
+      <section class="boks">
+        <img src="assets/images/gyoza-img.webp" alt="Gyoza" class="food-pic">
+        <article class="boks-content">
+            <h2>Gyoza</h2>
+            <div class="price">
+                <p>Pris pr. stk.</p>
+                <p>30 kr.</p>
             </div>
-    </li>
-  </ul>
+            <!-- White container starts here -->
+            <div class="white-box">
+                <section class="order-section">
+                    <h3>Vælg antal personer</h3>
+                    <div class="knapper">
+                        <button id="add">+ 1</button>
+                        <button id="subtract">- 1</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div class="display">
+                        <span class="label-2">Antal retter tilføjet i alt</span>
+                        <input type="text" id="totalItems" readonly value="0">
+                    </div>
+                    <div class="display">
+                        <span class="label-2">Total pris</span>
+                        <input type="text" id="totalPrice" readonly value="0 kr.">
+                    </div>
+                </section>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- Surprice  Section -->
+    <section class="boks">
+      <img src="assets/images/surprise.webp" alt="Surprice" class="food-pic">
+      <article class="boks-content">
+          <h2>Surprice</h2>
+          <div class="price">
+              <p>Pris pr. stk.</p>
+              <p>45 kr.</p>
+          </div>
+          <!-- White container starts here -->
+          <div class="white-box">
+              <section class="order-section">
+                  <h3>Vælg antal personer</h3>
+                  <div class="knapper">
+                      <button id="add">+ 1</button>
+                      <button id="subtract">- 1</button>
+                      <button id="reset">Reset</button>
+                  </div>
+                  <div class="display">
+                      <span class="label-2">Antal retter tilføjet i alt</span>
+                      <input type="text" id="totalItems" readonly value="0">
+                  </div>
+                  <div class="display">
+                      <span class="label-2">Total pris</span>
+                      <input type="text" id="totalPrice" readonly value="0 kr.">
+                  </div>
+              </section>
+          </div>
+      </article>
+
+
+      
+  </section>
+
+
+  <section class="chk"> 
+    <aside>
+        <label for="totalSum">TOTAL SUM</label>
+        <input type="number" name="totalSum" id="totalSum" disabled>
+    </aside>
+    <button onclick="goToCheckout();">Gå til Check Ud</button>
 </section>
 
-<section id="content" class="teaser-content">
-</div>
-<div class="food-info-wrapper">
-  <div class="food-info">
-    <span class="food-title">TOTAL SUM</span>
-      <div>
-          <input type="number" name="surprise" id="surprise" value="0" disabled>
-      </aside>
-    </div>
-        
-      </div>
-</div>
 
-  <button class="btn">Bestil</button>
-</div>
-</div>
- 
+   
+  
 </main>
+
+
 <!-- sektion med footer -->
 <footer>
   <section>
